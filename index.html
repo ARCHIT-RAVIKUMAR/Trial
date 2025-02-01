@@ -72,6 +72,7 @@
         /* Skills section */
         .skills {
             margin-top: 20px;
+            text-align: left;
         }
 
         .skills h3 {
@@ -80,21 +81,23 @@
             margin-bottom: 10px;
         }
 
-        .skills table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            margin: 0 auto;
+        .skills .category {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
         }
 
-        .skills th, .skills td {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
+        .skills ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
         }
 
-        .skills th {
-            background-color: #f2f2f2;
+        .skills li {
+            font-size: 1em;
             color: #555;
+            margin: 5px 0;
         }
 
         /* Footer for additional style */
@@ -133,32 +136,28 @@
             <!-- Skills Section -->
             <div class="skills">
                 <h3>Skills</h3>
-                <table>
-                    <tr>
-                        <th>Category</th>
-                        <th>Skills</th>
-                    </tr>
-                    <tr>
-                        <td>Programming Languages</td>
-                        <td>JavaScript, Python, C++</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>HTML, CSS, React, Node.js</td>
-                    </tr>
-                    <tr>
-                        <td>Database Management</td>
-                        <td>MySQL, MongoDB</td>
-                    </tr>
-                    <tr>
-                        <td>Version Control</td>
-                        <td>Git, GitHub</td>
-                    </tr>
-                    <tr>
-                        <td>Other Skills</td>
-                        <td>Problem Solving, Debugging</td>
-                    </tr>
-                </table>
+                <div class="category">Programming Languages</div>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+                <div class="category">Web Development</div>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                </ul>
+                <div class="category">Database Management</div>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                <div class="category">Other Skills</div>
+                <ul>
+                    <li>Git, GitHub</li>
+                    <li>Problem Solving</li>
+                </ul>
             </div>
         </div>
         <!-- Footer for links or additional info -->
