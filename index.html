@@ -80,15 +80,21 @@
             margin-bottom: 10px;
         }
 
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
+        .skills table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin: 0 auto;
         }
 
-        .skills li {
-            font-size: 1em;
+        .skills th, .skills td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .skills th {
+            background-color: #f2f2f2;
             color: #555;
-            margin: 5px 0;
         }
 
         /* Footer for additional style */
@@ -118,22 +124,41 @@
         <!-- Content -->
         <div class="card-content">
             <h2>ARCHIT RAVIKUMAR</h2>
+            <p>SOFTWARE DEVELOPER</p>
             <p>B.Tech in Computer Science</p>
             <div class="details">
-                <p>Location: Kerala,India</p>
                 <p>Email: architravikumar@mulearn</p>
                 <p>Phone: +1234567890</p>
             </div>
             <!-- Skills Section -->
             <div class="skills">
                 <h3>Skills</h3>
-                <ul>
-                    <li>Programming Languages: JavaScript, Python, C++</li>
-                    <li>Web Development: HTML, CSS, React, Node.js</li>
-                    <li>Database Management: MySQL, MongoDB</li>
-                    <li>Problem Solving and Debugging</li>
-                    <li>UI/UX Design</li>
-                </ul>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                    <tr>
+                        <td>Programming Languages</td>
+                        <td>JavaScript, Python, C++</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>HTML, CSS, React, Node.js</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>MySQL, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>Version Control</td>
+                        <td>Git, GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Other Skills</td>
+                        <td>Problem Solving, Debugging</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <!-- Footer for links or additional info -->
