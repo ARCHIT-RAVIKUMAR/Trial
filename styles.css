@@ -23,15 +23,6 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic {
-    display: block;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
 h1, h2, h3 {
     text-align: center;
 }
