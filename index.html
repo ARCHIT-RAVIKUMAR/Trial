@@ -3,46 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Creation - Step 1</title>
+    <title>Account Creation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="step2.html" method="post">
-        <h2>Create Your Account</h2>
-        <div class="name-fields">
-            <div class="field">
+    <div class="form-wrapper">
+        <input type="radio" name="step" id="step1" checked>
+        <input type="radio" name="step" id="step2">
+
+        <div class="form-step" id="step1-content">
+            <h2>Create Your Account</h2>
+            <div class="form-group">
                 <label for="firstname">First Name:</label>
                 <input type="text" id="firstname" name="firstname" required>
             </div>
-            <div class="field">
+
+            <div class="form-group">
                 <label for="lastname">Last Name:</label>
                 <input type="text" id="lastname" name="lastname" required>
             </div>
-        </div><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required><br><br>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
 
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select><br><br>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
-        <label class="checkbox-label">
-            <input type="checkbox" id="terms" name="terms" required>
-            I agree to the Terms and Conditions
-        </label><br><br>
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the Terms and Conditions
+                </label>
+            </div>
 
-        <input type="submit" value="Create Account">
-    </form>
+            <label for="step2" class="next-button">Next</label>
+        </div>
+
+        <div class="form-step" id="step2-content">
+            <h2>Set Up Your Account</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+
+            <input type="submit" value="Finish">
+        </div>
+    </div>
 </body>
-</html> 
+</html>
 
