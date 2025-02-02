@@ -9,42 +9,13 @@ body {
     height: 100vh;
 }
 
-.form-wrapper {
-    width: 100%;
-    max-width: 500px;
-    position: relative;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.form-step {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+form {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s;
-    display: none;
-}
-
-.form-step#step1-content {
-    opacity: 1;
-    display: block;
-}
-
-input#step1:checked ~ .form-step#step1-content {
-    opacity: 1;
-    display: block;
-}
-
-input#step2:checked ~ .form-step#step2-content {
-    opacity: 1;
-    display: block;
+    width: 100%;
+    max-width: 500px;
 }
 
 h2 {
@@ -84,21 +55,6 @@ input:focus, select:focus {
 .checkbox-group input {
     width: auto;
     margin-right: 10px;
-}
-
-.next-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.next-button:hover {
-    background-color: #0056b3;
 }
 
 input[type="submit"] {
