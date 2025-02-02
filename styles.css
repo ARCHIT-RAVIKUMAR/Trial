@@ -1,6 +1,6 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #f06, #f79);
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     margin: 0;
     padding: 50px;
     display: flex;
@@ -9,18 +9,51 @@ body {
     height: 100vh;
 }
 
-form {
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form-step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+    transition: opacity 0.3s;
+    display: none;
+}
+
+.form-step#step1-content {
+    opacity: 1;
+    display: block;
+}
+
+input#step1:checked ~ .form-step#step1-content {
+    opacity: 1;
+    display: block;
+}
+
+input#step2:checked ~ .form-step#step2-content {
+    opacity: 1;
+    display: block;
 }
 
 h2 {
     text-align: center;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
     margin-bottom: 20px;
 }
 
@@ -33,7 +66,7 @@ label {
 input, select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: border-color 0.3s;
@@ -43,28 +76,29 @@ input:focus, select:focus {
     border-color: #007BFF;
 }
 
-.name-fields {
-    display: flex;
-    justify-content: space-between;
-}
-
-.field {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.field:last-child {
-    margin-right: 0;
-}
-
-.checkbox-label {
+.checkbox-group {
     display: flex;
     align-items: center;
 }
 
-input[type="checkbox"] {
+.checkbox-group input {
     width: auto;
     margin-right: 10px;
+}
+
+.next-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
 }
 
 input[type="submit"] {
@@ -76,9 +110,9 @@ input[type="submit"] {
     border-radius: 4px;
     font-size: 16px;
     transition: background-color 0.3s;
-} 
+    width: 100%;
+}
 
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
